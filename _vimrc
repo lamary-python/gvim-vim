@@ -132,7 +132,7 @@ Bundle 'gmarik/vundle'
 Bundle 'a.vim'
 Bundle 'Align'
 " Bundle 'jiangmiao/auto-pairs'
-Bundle 'bufexplorer.zip'
+" Bundle 'bufexplorer.zip'
 " Bundle 'ccvext.vim'
 " Bundle 'cSyntaxAfter'
 " Bundle 'ctrlpvim/ctrlp.vim'
@@ -150,11 +150,11 @@ Bundle 'scrooloose/nerdtree'
 " Bundle 'wesleyche/SrcExpl'
 " Bundle 'std_c.zip'
 " Bundle 'tpope/vim-surround'
-Bundle 'scrooloose/syntastic'
-Bundle 'majutsushi/tagbar'
-Bundle 'taglist.vim'
-Bundle 'TxtBrowser'
-Bundle 'ZoomWin'
+" Bundle 'scrooloose/syntastic'
+" Bundle 'majutsushi/tagbar'
+" Bundle 'taglist.vim'
+" Bundle 'TxtBrowser'
+" Bundle 'ZoomWin'
 
 " -----------------------------------------------------------------------------
 "  < 编码配置 >
@@ -744,6 +744,8 @@ let NERDSpaceDelims = 1                     "在左注释符之后，右注释�
 
 " 常规模式下输入 F2 调用插件
 nmap <F2> :NERDTreeToggle<CR>
+nmap <c-n> :NERDTreeToggle<CR>
+let NERDTreeBookmarksFile=$HOME . '/.vim/bookmark.txt'  "书签保存位置
 let NERDTreeShowBookmarks=1
 
 " -----------------------------------------------------------------------------
