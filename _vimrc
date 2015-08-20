@@ -209,19 +209,19 @@ set smartcase                                         "如果搜索模式包含�
 " set noincsearch                                       "在输入要搜索的文字时，取消实时匹配
 
 " Ctrl + K 插入模式下光标向上移动
-imap <c-k> <Up>
+" imap <c-k> <Up>
 
 " Ctrl + J 插入模式下光标向下移动
-imap <c-j> <Down>
+" imap <c-j> <Down>
 
 " Ctrl + H 插入模式下光标向左移动
-imap <c-h> <Left>
+" imap <c-h> <Left>
 
 " Ctrl + L 插入模式下光标向右移动
-imap <c-l> <Right>
+" imap <c-l> <Right>
 
 " 启用每行超过80列的字符提示（字体变蓝并加下划线），不启用就注释掉
-au BufWinEnter * let w:m2=matchadd('Underlined', '\%>' . 80 . 'v.\+', -1)
+" au BufWinEnter * let w:m2=matchadd('Underlined', '\%>' . 80 . 'v.\+', -1)
 
 " -----------------------------------------------------------------------------
 "  < 界面配置 >
@@ -246,7 +246,8 @@ if g:isGUI
     " colorscheme Tomorrow-Night-Eighties               "Gvim配色方案
     " colorscheme desert_terminal
 else
-    colorscheme Tomorrow-Night-Eighties               "终端配色方案
+    " colorscheme Tomorrow-Night-Eighties               "终端配色方案
+    colorscheme desert
 endif
 
 " 显示/隐藏菜单栏、工具栏、滚动条，可用 Ctrl + F11 切换
