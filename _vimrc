@@ -134,7 +134,7 @@ Bundle 'Align'
 " Bundle 'jiangmiao/auto-pairs'
 " Bundle 'bufexplorer.zip'
 " Bundle 'ccvext.vim'
-" Bundle 'cSyntaxAfter'
+Bundle 'cSyntaxAfter'
 " Bundle 'ctrlpvim/ctrlp.vim'
 " Bundle 'mattn/emmet-vim'
 Bundle 'Yggdroot/indentLine'
@@ -229,7 +229,7 @@ set smartcase                                         "如果搜索模式包含�
 set number                                            "显示行号
 set laststatus=2                                      "启用状态栏信息
 " set cmdheight=2                                       "设置命令行的高度为2，默认为1
-set cursorline                                        "突出显示当前行
+" set cursorline                                        "突出显示当前行
 set guifont=YaHei_Consolas_Hybrid:h12                 "设置字体:字号（字体名称空格用下划线代替）
 set nowrap                                            "设置不自动换行
 set shortmess=atI                                     "去掉欢迎界面
@@ -268,6 +268,15 @@ if g:isGUI
         \set guioptions+=L <Bar>
     \endif<CR>
 endif
+
+" html indent
+filetype indent on
+let g:html_indent_inctags = "body,head,tbody"   " 缩进body head
+let g:html_indent_script1 = "inc"     " 缩进<script>标签
+let g:html_indent_style1 = "inc"      " 缩进<style>标签
+
+
+
 
 " -----------------------------------------------------------------------------
 "  < 编译、连接、运行配置 (目前只配置了C、C++、Java语言)>
@@ -655,7 +664,7 @@ set nobackup                                "设置无备份文件
 "  < cSyntaxAfter 插件配置 >
 " -----------------------------------------------------------------------------
 " 高亮括号与运算符等
-au! BufRead,BufNewFile,BufEnter *.{c,cpp,h,java,javascript} call CSyntaxAfter()
+" au! BufRead,BufNewFile,BufEnter *.{c,cpp,h,java,javascript} call CSyntaxAfter()
 
 " -----------------------------------------------------------------------------
 "  < ctrlp.vim 插件配置 >
