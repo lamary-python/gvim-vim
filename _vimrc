@@ -119,6 +119,7 @@ filetype off                                          "禁用文件类型侦测
 
 if g:islinux
     set rtp+=~/.vim/bundle/vundle/
+    set rtp+=/usr/lib/golang/misc/vim
     call vundle#rc()
 else
     set rtp+=$VIM/vimfiles/bundle/vundle/
@@ -155,6 +156,8 @@ Bundle 'scrooloose/nerdtree'
 " Bundle 'taglist.vim'
 " Bundle 'TxtBrowser'
 " Bundle 'ZoomWin'
+Bundle 'maksimr/vim-jsbeautify'
+Bundle 'einars/js-beautify'
 
 " -----------------------------------------------------------------------------
 "  < 编码配置 >
